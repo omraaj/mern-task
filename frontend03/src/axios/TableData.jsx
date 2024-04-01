@@ -6,12 +6,11 @@ const TableData = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    // Define a function to fetch data from the API
     const fetchData = async () => {
       try {
-        // Make a GET request to the API endpoint
+        
         const response = await axios.get('http://localhost:3001/getlist');
-        // Update the state with the fetched data
+    
         setData(response.data);
       } catch (error) {
         console.error('Error fetching data:', error);
