@@ -56,7 +56,7 @@ const YourComponent = () => {
             title: "Sold",
             dataIndex: "sold",
             key: "sold",
-            render: (sold) => (sold ? "Yes" : "No"), // Render 'Yes' if sold is true, 'No' otherwise
+            render: (sold) => (sold ? "Yes" : "No"), 
         },
     ];
 
@@ -109,7 +109,7 @@ const YourComponent = () => {
             return (
                 title.toLowerCase().includes(searchValue) ||
                 description.toLowerCase().includes(searchValue) ||
-                price.toString().toLowerCase().includes(searchValue) // Convert price to string before comparison
+                price.toString().toLowerCase().includes(searchValue) 
             );
         });
         setData(filteredData);
